@@ -47,7 +47,10 @@ export function ReferenceData({
           className="hidden"
           multiple
           accept={ACCEPTED_TYPES}
-          onChange={(e) => void handleFiles(e.target.files)}
+          onChange={(e) => {
+            void handleFiles(e.target.files);
+            e.target.value = "";
+          }}
         />
         <Upload className="mx-auto h-8 w-8 text-muted-foreground" />
         <p className="mt-2 text-sm font-medium">
