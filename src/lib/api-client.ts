@@ -1,5 +1,11 @@
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
+if (!API_BASE_URL) {
+  throw new Error(
+    "Missing NEXT_PUBLIC_API_BASE_URL environment variable. Please set it in your .env file.",
+  );
+}
+
 export async function apiGet<T>(endpoint: string): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${endpoint}`);
   if (!response.ok) {
