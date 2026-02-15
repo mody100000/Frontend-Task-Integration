@@ -3,7 +3,7 @@
 import { ACCEPTED_EXTENSIONS } from "@/constants/agent.constants";
 import { apiPost, uploadFileToBucket } from "@/lib/api-client";
 import { Attachment, UploadedFile } from "@/types/agent.types";
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useMemo } from "react";
 
 export const ACCEPTED_TYPES = ACCEPTED_EXTENSIONS.join(",");
 
