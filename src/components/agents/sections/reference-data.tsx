@@ -73,7 +73,7 @@ export function ReferenceData({
         <div className="space-y-2">
           {uploadedFiles.map((f, i) => (
             <div
-              key={i}
+              key={`${f.name}-${f.size}`}
               className="flex items-center justify-between rounded-md border px-3 py-2"
             >
               <div className="flex items-center gap-2 min-w-0">
