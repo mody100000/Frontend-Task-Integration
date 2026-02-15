@@ -90,11 +90,11 @@ export function useFileUpload(): UseFileUploadReturn {
           uploading: true,
         };
         newFiles.push(uploadedFile);
-        void uploadSingleFile(uploadedFile);
       }
 
       if (newFiles.length > 0) {
         setUploadedFiles((prev) => [...prev, ...newFiles]);
+        newFiles.forEach((f) => void uploadSingleFile(f));
       }
     },
     [uploadSingleFile],
