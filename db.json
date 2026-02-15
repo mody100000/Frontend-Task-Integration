@@ -1,35 +1,164 @@
 {
   "languages": [
-    { "id": "en", "name": "English", "code": "en" },
-    { "id": "ar", "name": "Arabic", "code": "ar" },
-    { "id": "fr", "name": "French", "code": "fr" },
-    { "id": "es", "name": "Spanish", "code": "es" },
-    { "id": "de", "name": "German", "code": "de" },
-    { "id": "it", "name": "Italian", "code": "it" },
-    { "id": "pt", "name": "Portuguese", "code": "pt" },
-    { "id": "zh", "name": "Chinese", "code": "zh" },
-    { "id": "ja", "name": "Japanese", "code": "ja" },
-    { "id": "ko", "name": "Korean", "code": "ko" }
+    {
+      "id": "en",
+      "name": "English",
+      "code": "en"
+    },
+    {
+      "id": "ar",
+      "name": "Arabic",
+      "code": "ar"
+    },
+    {
+      "id": "fr",
+      "name": "French",
+      "code": "fr"
+    },
+    {
+      "id": "es",
+      "name": "Spanish",
+      "code": "es"
+    },
+    {
+      "id": "de",
+      "name": "German",
+      "code": "de"
+    },
+    {
+      "id": "it",
+      "name": "Italian",
+      "code": "it"
+    },
+    {
+      "id": "pt",
+      "name": "Portuguese",
+      "code": "pt"
+    },
+    {
+      "id": "zh",
+      "name": "Chinese",
+      "code": "zh"
+    },
+    {
+      "id": "ja",
+      "name": "Japanese",
+      "code": "ja"
+    },
+    {
+      "id": "ko",
+      "name": "Korean",
+      "code": "ko"
+    }
   ],
   "voices": [
-    { "id": "alloy", "name": "Alloy", "tag": "Premium", "language": "en" },
-    { "id": "echo", "name": "Echo", "tag": "Standard", "language": "en" },
-    { "id": "fable", "name": "Fable", "tag": "Premium", "language": "en" },
-    { "id": "onyx", "name": "Onyx", "tag": "Standard", "language": "en" },
-    { "id": "nova", "name": "Nova", "tag": "Premium", "language": "en" },
-    { "id": "shimmer", "name": "Shimmer", "tag": "Standard", "language": "en" }
+    {
+      "id": "alloy",
+      "name": "Alloy",
+      "tag": "Premium",
+      "language": "en"
+    },
+    {
+      "id": "echo",
+      "name": "Echo",
+      "tag": "Standard",
+      "language": "en"
+    },
+    {
+      "id": "fable",
+      "name": "Fable",
+      "tag": "Premium",
+      "language": "en"
+    },
+    {
+      "id": "onyx",
+      "name": "Onyx",
+      "tag": "Standard",
+      "language": "en"
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "tag": "Premium",
+      "language": "en"
+    },
+    {
+      "id": "shimmer",
+      "name": "Shimmer",
+      "tag": "Standard",
+      "language": "en"
+    }
   ],
   "prompts": [
-    { "id": "default", "name": "Default Prompt", "description": "General-purpose prompt" },
-    { "id": "sales", "name": "Sales Prompt", "description": "Optimized for sales" },
-    { "id": "support", "name": "Support Prompt", "description": "Optimized for support" },
-    { "id": "custom", "name": "Custom Prompt", "description": "Build your own" }
+    {
+      "id": "default",
+      "name": "Default Prompt",
+      "description": "General-purpose prompt"
+    },
+    {
+      "id": "sales",
+      "name": "Sales Prompt",
+      "description": "Optimized for sales"
+    },
+    {
+      "id": "support",
+      "name": "Support Prompt",
+      "description": "Optimized for support"
+    },
+    {
+      "id": "custom",
+      "name": "Custom Prompt",
+      "description": "Build your own"
+    }
   ],
   "models": [
-    { "id": "pro", "name": "Pro", "description": "Highest quality, lowest latency" },
-    { "id": "standard", "name": "Standard", "description": "Balanced quality and cost" },
-    { "id": "flex", "name": "Flex", "description": "Cost-effective for high volume" }
+    {
+      "id": "pro",
+      "name": "Pro",
+      "description": "Highest quality, lowest latency"
+    },
+    {
+      "id": "standard",
+      "name": "Standard",
+      "description": "Balanced quality and cost"
+    },
+    {
+      "id": "flex",
+      "name": "Flex",
+      "description": "Cost-effective for high volume"
+    }
   ],
-  "agents": [],
-  "attachments": []
+  "agents": [
+    {
+      "name": "test",
+      "description": "test",
+      "callType": "outbound",
+      "language": "ar",
+      "voice": "fable",
+      "prompt": "sales",
+      "model": "standard",
+      "latency": 0.5,
+      "speed": 110,
+      "callScript": "test",
+      "serviceDescription": "test",
+      "attachments": [
+        1
+      ],
+      "tools": {
+        "allowHangUp": true,
+        "allowCallback": false,
+        "liveTransfer": false
+      },
+      "id": 1
+    }
+  ],
+  "attachments": [
+    {
+      "key": "93e0f406-d0e2-4b05-a534-e533403c9776",
+      "fileName": "Mahmoud-Mohamed-Gomaa-Front-End.pdf",
+      "fileSize": 68892,
+      "mimeType": "application/pdf",
+      "id": 1
+    }
+  ]
 }
