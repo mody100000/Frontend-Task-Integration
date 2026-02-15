@@ -25,9 +25,13 @@ export function useFileUpload(): UseFileUploadReturn {
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
-  const attachmentIds = uploadedFiles
-    .filter((f) => f.attachmentId && !f.error)
-    .map((f) => f.attachmentId!);
+  const attachmentIds = useMemo(
+    () =>
+      uploadedFiles
+        .filter((f) => f.attachmentId && !f.error)
+        .map((f) => f.attachmentId!),
+    [uploadedFiles],
+  );
 
   const uploadSingleFile = useCallback(async (uploadedFile: UploadedFile) => {
     try {
